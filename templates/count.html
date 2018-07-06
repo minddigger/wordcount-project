@@ -1,0 +1,10 @@
+<p><h1>{{title}}</h1></p>
+<p> de tekst : {{tekst}}
+<p>Het aantal woorden is :{{count}}</p>
+<a href="{% url 'home' %}">Opnieuw...</a>
+<p>lijst van de woorden die voorkomen:</p>
+
+{% for word, counttotal in sortedwords %}
+<p>{{word}} - {{counttotal}}</p>
+
+{% endfor %}

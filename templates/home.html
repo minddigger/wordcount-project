@@ -1,0 +1,9 @@
+<p><h1><b>Dit is de HOME pagina</b></h1></p>
+<p>{{hithere}} </p>
+<a href="{% url 'about' %}">About...</a>
+<form action="{% url 'count' %}">
+<p>Geef wat tekst in:</p>
+<p><textarea cols="40" rows="10" name="fulltext"></textarea></p>
+<p><input type="submit" value="Count!" /></p>
+<input type="hidden" value="dit is ook een input veld" name="extra"/>
+</form>
